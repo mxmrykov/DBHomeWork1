@@ -1,0 +1,9 @@
+services:
+  postgres:
+    image: postgres:14.0
+    environment:
+      POSTGRES_DB: 'training_hw_5'
+      POSTGRES_USER: 'postgres'
+      POSTGRES_PASSWORD: 'postgres'
+    ports:
+      - '127.0.0.1:5588:5432'
